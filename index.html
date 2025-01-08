@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css" >
+  </head>
+ 
+  <body>
+  
+    <div class="header">
+       <img src="/images/logo.svg" class="navimg">
+       <nav>
+            <ul class="sidebar">
+                <li onclick=hidesidebar()><svg width="28" height="27" xmlns="http://www.w3.org/2000/svg" class="btn click"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg></li>
+        
+                <li><a href="#" >New</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+            <ul>
+            <li class="hide"><a href="#" >New</a></li>
+            <li class="hide"><a href="#">Popular</a></li>
+            <li class="hide"><a href="#">Trending</a></li>
+            <li class="hide"><a href="#">Categories</a></li>
+            <li onclick=showSidebar()></a><svg width="26" height="26" xmlns="http://www.w3.org/2000/svg" class="btn click2"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg></li>
+        </ul> 
+        </nav>
+   
+
+    <div class="gridcontainer">
+      <div class="first"></div>
+        
+      <div class="content">
+        <h2> <span>New</span> </h2>
+ 
+        <h3> Hydrogen VS Electric Cars</h3>
+         <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+         <div class="hr"></div>
+       
+        <h3> The Downsides of AI Artistry</h3>
+         <p>What are the possible adverse effects of on-demand AI image generation?</p>
+         <div class="hr"></div>
+       
+        <h3> Is VC Funding Drying Up?</h3>
+        <p> Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+       </div>
+      <div class="text"><h1>The Bright<br> Future of<br> Web 3.0?</h1></div>
+      <div class="text2">
+       <p class="text3">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+        But is it really fulfilling its promise?</p>
+        <button>Read more</button>
+      </div>
+      <div class="textimg">
+        <img src="/images/image-retro-pcs.jpg" class="textimg">
+        <div class="textimgdiv">
+          <h1 class="color">01</h1>
+          <h3>Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+          </div> 
+      </div>
+      <div class="textimg">
+        <img src="/images/image-top-laptops.jpg" class="textimg">
+        <div class="textimgdiv">
+         <h1 class="color">02</h1>
+         <h3>Top 10 Laptops of 2022</h3>
+         <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="textimg" go>
+        <img src="/images/image-gaming-growth.jpg" class="textimg ">
+        <div class="textimgdiv">
+        <h1 class="color">03</h1>
+          <h3>The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+
+      </div>
+      
+    </div>
+  
+    <div>
+        <script>
+            function showSidebar(){
+             const sidebar = document.querySelector('.sidebar')  
+             sidebar.style.display = 'flex' 
+            }
+            function hidesidebar(){
+                const sidebar = document.querySelector('.sidebar')  
+                sidebar.style.display = 'none' 
+            }
+          </script>
+  </body>
+</html>  
